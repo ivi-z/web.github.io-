@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivanna Zarate">
+    <meta name="description" content="Sitio E-commerce">
+    <!-- Iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link de tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cambio de los estilos de tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'lila': '#dec8f0e3;',
+            },
+            fontFamily: {
+              fontTexto: ["Montserrat", 'sans-serif'],
+            },
+            backgroundImage: {
+             'fondoMain': "url('./imagenes/contacto/fondo.jpg')",
+             'fondoMain2':"url('./imagenes/contacto/fondo-2.jpg')",
+            },
+          }
+        }
+      }
+    </script>
+    <!-- Contenedores con clases de tailwind   -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+          .letras-sm {
+            letter-spacing: 0.1rem;
+            font-size: 0.875rem ;
+            line-height: 1.25rem;
+            font-weight:500;
+          }
+          .letras-xs{
+            letter-spacing: 0.1rem;
+            font-size: 0.75rem;
+            line-height: 1rem;
+          }
+          .letras-bs{
+            letter-spacing: 0.1rem;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+          }
+          .contacto-caja{
+            background-color: rgba(241, 241, 240, 0.87);
+            box-shadow: 1px 2px 3px rgb(53, 53, 53);
+            border-radius: 20px;
+          }
+        }
+      </style>
+    <!-- Links de la tipografia  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+    <!-- Titulo -->
+    <title>Felime Charm |Contacto|</title>
+  
+  </head>
+<body class="fontTexto m-0 p-0 text-black">
+  <!-- Encabezado -->
+  <header class="flex flex-col md:flex-row md:justify-between items-center bg-white  m-3 letras-xs">
+    <!-- Logo/Nombre del Sitio -->
+    <div class="flex flex-col md:flex-row md:justify-center items-center letras-sm mb-4 md:mb-0">
+      <img src="./imagenes/icono.jpg" alt="Logo de la pagina" width="45px" title="Nuestro Logo"
+        class="mb-1 transition duration-[1.2s] hover:scale-125">
+      <h1 class="md:ml-4 transition duration-[1.2s] hover:scale-105">FELINE CHARM</h1>
+    </div>
+    <!-- Barra de Navegación -->
+    <nav>
+      <ul class="flex justify-center items-center">
+        <li>
+          <a href="./index.html" class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">INICIO</a>
+        </li>
+        <li>
+          <a href="./nosotros.html" class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">NOSOTROS</a>
+        </li>
+        <li>
+          <a href="./productos.html"class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">
+            <i class="bi bi-shop text-base" title="Productos"></i>
+          </a>
+        </li>
+        <li>
+          <a href="./carrito.html" class="no-underline transition-all duration-100 mx-3">
+            <i class="bi bi-bag-heart-fill hover:text-red-800 text-base" title="Carrito de Compras"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Contenido -->
+    <main class="bg-fondoMain bg-cover bg-no-repeat bg-center md:bg-fondoMain2 md:flex md:justify-evenly md:items-center min-h-screen">
+      <!-- Datos de Contacto -->
+      <section class="mx-5 mb-6">
+        <div class="p-4 letras-bs underline">
+          <h2>CONTÁCTENOS</h2>
+        </div> 
+        <div class="contacto-caja letras-sm w-full p-4" >
+          <h3>Teléfono</h3>
+          <p class="pb-2 italic">+159 383 4233534</p>
+          <h3 >Email:</h3>
+          <p class="pb-2 italic">ivvi.zarate@gmail.com</p>
+           <h3>Horarios de Atención:</h3>
+           <p class="pb-2 italic">Lunes a Viernes: 9:00 AM-5:00 PM
+            <br>
+            Sabados: 9:00 AM - 1:00 PM
+            <br>
+            Domingos: Cerrado
+          </p>
+          <div class="flex">
+            <div>
+              <h3>Direción</h3>
+              <p class="italic">
+                Calle 12333, San Fernando Del Valle de Catamarca, Catamarca-Argentina.
+              </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56119.97404422858!2d-65.77515985000001!3d-28.464534049999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942428bf1d0f9fcd%3A0x7e1edd4b1609861a!2sSan%20Fernando%20del%20Valle%20de%20Catamarca%2C%20Catamarca!5e0!3m2!1ses!2sar!4v1720585307202!5m2!1ses!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-full"></iframe>
+          </div>
+        </div>     
+      </section>
+
+      <!-- Formulario -->
+      <section class="flex justify-center letras-ms font-medium md:contacto-caja p-4">
+          <form action="./respuesta.html" method="post">
+            <label>Nombre <input type="text" name="nombre" placeholder="Ingrese su Nombre" required> </label>
+            <br><br>
+            <label>Email <input type="email" name="email" placeholder="Ingrese su E-email" required> </label>
+            <br><br>
+            <label>Teléfono <input type="number" name="telefono"></label>
+            <br><br>
+            <label for="mensaje">Mensaje </label>
+            <br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="6" placeholder="Ingrese un Mensaje" required></textarea>
+            <br><br>
+            <div class="bg-black text-white p-2 w-20 text-center rounded-lg">
+             <input type="submit" id="mensaje"
+              value="Enviar">
+            </div>
+          </form>
+      </section>
+      </main>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="bg-black text-white font-light text-center letras-xs pt-20 pb-16">
+    <!-- Logo y Pequeño Mensaje -->
+    <div class="flex flex-col items-center justify-center md:letras-sm mb-5 px-5">
+      <img src="./imagenes/icon.png" alt="Logo de la Pagina" width="45px" title="Nuestro Logo"
+        class="mb-1 transition duration-[1.2s] hover:scale-125">
+      <h2 class="mt-4">¡Viste con encanto felino, viste con Feline Charm!</h2>
+    </div>
+    <!-- Contacto //Utilice iconos de bootstrap//-->
+    <div>
+      <ul class=" flex text-lg justify-center mb-10 mt-10">
+        <li>
+          <a href="https://github.com" target="_blank">
+            <i class="bi bi-github px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="bi bi-linkedin px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ivannit_a?igsh=bThmZW91MzRjdWI2" target="_blank">
+            <i class="bi bi-instagram px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:ivvi.zarate@gmail.com" target="_blank">
+            <i class="bi bi-envelope px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.link/1l9hui" target="_blank">
+            <i class="bi bi-whatsapp px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Links de Ayuda / Politicas de Privacidad -->
+    <div>
+      <ul class="flex flex-col">
+        <li><a href="#" class="leading-6 underline hover:text-lila">Como comprar</a> </li>
+        <li><a href="#" class="leading-6 underline hover:text-lila">Sobre Nosotros</a></li>
+
+        <li><a href="#" class="leading-6 underline hover:text-lila">Política de Privacidad </a> </li>
+        <li><a href="#" class="leading-6 underline hover:text-lila">Términos y Condiciones </a></li>
+      </ul>
+      <!-- Derechos de autor   -->
+      <p class="mt-7">
+        &#169; 2024 Feline Charm
+        <br>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

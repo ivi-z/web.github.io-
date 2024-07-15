@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivanna Zarate">
+    <meta name="description" content="Sitio E-commerce">
+    <!-- Iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link de tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cambio de los estilos de tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'lila': '#dec8f0e3;',
+            },
+            fontFamily: {
+              fontTexto: ["Montserrat", 'sans-serif'],
+            },
+            backgroundImage: {
+             'fondoMain': "url('./imagenes/nosotros/fondos-vertical.jpg')",
+            },
+          }
+        }
+      }
+    </script>
+    <!-- Contenedores con clases de tailwind   -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+          .letras-sm {
+            letter-spacing: 0.1rem;
+            font-size: 0.875rem ;
+            line-height: 1.25rem;
+            font-weight:500;
+          }
+          .letras-xs{
+            letter-spacing: 0.1rem;
+            font-size: 0.75rem;
+            line-height: 1rem;
+          }
+          .letras-bs{
+            letter-spacing: 0.1rem;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+          }
+          .objetivo-caja{
+            background-color:#ccddd3be;
+            box-shadow: 1px 2px 3px rgb(53, 53, 53);
+            border-radius: 20px;
+          }
+        }
+      </style>
+    <!-- Links de la tipografia  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+    <!-- Titulo -->
+    <title>Felime Charm |Sobre Nosotros|</title>
+  
+  </head>
+
+  <body class="fontTexto m-0 p-0 text-black">
+
+    <!-- Encabezado -->
+    <header class="flex flex-col md:flex-row md:justify-between items-center bg-white  m-3 letras-xs">
+      <!-- Logo/Nombre del Sitio -->
+      <div class="flex flex-col md:flex-row md:justify-center items-center letras-sm mb-4 md:mb-0">
+        <img src="./imagenes/icono.jpg" alt="Logo de la pagina" width="45px" title="Nuestro Logo"
+          class="mb-1 transition duration-[1.2s] hover:scale-125">
+        <h1 class="md:ml-4 transition duration-[1.2s] hover:scale-105">FELINE CHARM</h1>
+      </div>
+      <!-- Barra de Navegación -->
+      <nav>
+        <ul class="flex justify-center items-center">
+          <li>
+            <a href="./index.html" class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">INICIO</a>
+          </li>
+          <li>
+            <a href="./contacto.html" class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">CONTACTO</a>
+          </li>
+          <li>
+            <a href="./productos.html"class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">
+              <i class="bi bi-shop text-base" title="Productos"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./carrito.html" class="no-underline transition-all duration-100 mx-3">
+              <i class="bi bi-bag-heart-fill hover:text-red-800 text-base" title="Carrito de Compras"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido -->
+    <main class="bg-fondoMain bg-cover bg-no-repeat bg-center  min-h-screen letras-sm flex flex-col justify-around ">
+      <!-- Sección Sobre Nosotros -->
+      <section class="mb-4">
+        <!-- Video //Solo se muestra el video cuando la pantalla es pequeña//   -->
+        <div class="sm:hidden">
+          <video autoplay loop muted>
+          <source src="./imagenes/nosotros/nos.mp4">
+          </video>
+        </div>
+        <!-- Sobre Nosotros Texto -->
+        <div class="pt-5 mx-5 md:mx-20">
+          <h2 class="letras-bs text-center p-4">SOBRE NOSOTROS</h2>
+              <p class="text-justify">
+                Somos FELINE CHARM una empresa apasionada por los gatos y la moda. Nuestra dedicación a estos adorables felinos nos impulsa a crear prendas personalizadas con diseños exclusivos que reflejen la belleza y la diversión de los gatos. Nos esforzamos por proporcionar a nuestros clientes prendas de alta calidad que les permitan expresar su amor por los gatos de una manera única y creativa
+              </p>
+        </div>      
+      </section>
+      <!-- Seccion Objectivos -->
+      <section class="flex flex-col md:flex-row justify-center items-center my-5">
+        <!-- Mision -->
+        <div class="objetivo-caja text-justify w-72 h-56 m-4">
+          <h3 class="text-center letras-bs py-2"> Misión</h3>
+          <p class="p-3">
+              En Feline Charm nos comprometemos a ofrecer a nuestros clientes prendas personalizadas que celebren su amor por los gatitos y reflejen su estilo único. 
+          </p>
+        </div>
+        <!-- Visión -->
+        <div class="objetivo-caja text-justify w-72 h-72 m-4" >
+            <h3 class="text-center letras-bs py-2 ">Visión</h3> 
+          <p class="p-3">
+            Nuestra visión es convertirnos en la principal opción para los amantes de los gatos que buscan prendas personalizadas que combinen moda y pasión animal. Queremos ser reconocidos como un referente en la industria por nuestra creatividad, calidad y compromiso con los valores felinos.
+          </p>
+        </div>
+        <!-- Nuestro Valores -->
+        <div class="objetivo-caja text-justify w-72 h-56 m-4">
+          <h3 class="text-center letras-bs py-2">Valores</h3>
+          <ul class="m-0 p-3">
+            <li>Buscamos transmitir ese amor en cada prenda que creamos.</li>
+            <li>Diseños únicos y originales.</li>
+            <li>Alta calidad y técnicas de impresión de última generación.</li>
+            <li>Personalización.</li>
+          </ul>     
+        </div>
+      </section>
+    </main> 
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="bg-black text-white font-light text-center letras-xs pt-20 pb-16">
+      <!-- Logo y Pequeño Mensaje -->
+      <div class="flex flex-col items-center justify-center md:letras-sm mb-5 px-5">
+        <img src="./imagenes/icon.png" alt="Logo de la Pagina" width="45px" title="Nuestro Logo"
+          class="mb-1 transition duration-[1.2s] hover:scale-125">
+        <h2 class="mt-4">¡Viste con encanto felino, viste con Feline Charm!</h2>
+      </div>
+      <!-- Contacto //Utilice iconos de bootstrap//-->
+      <div>
+        <ul class=" flex text-lg justify-center mb-10 mt-10">
+          <li>
+            <a href="https://github.com" target="_blank">
+              <i class="bi bi-github px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="bi bi-linkedin px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ivannit_a?igsh=bThmZW91MzRjdWI2" target="_blank">
+              <i class="bi bi-instagram px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ivvi.zarate@gmail.com" target="_blank">
+              <i class="bi bi-envelope px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.link/1l9hui" target="_blank">
+              <i class="bi bi-whatsapp px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Links de Ayuda / Politicas de Privacidad -->
+      <div>
+        <ul class="flex flex-col">
+          <li><a href="#" class="leading-6 underline hover:text-lila">Como comprar</a> </li>
+          <li><a href="#" class="leading-6 underline hover:text-lila">Sobre Nosotros</a></li>
+
+          <li><a href="#" class="leading-6 underline hover:text-lila">Política de Privacidad </a> </li>
+          <li><a href="#" class="leading-6 underline hover:text-lila">Términos y Condiciones </a></li>
+        </ul>
+        <!-- Derechos de autor   -->
+        <p class="mt-7">
+          &#169; 2024 Feline Charm
+          <br>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

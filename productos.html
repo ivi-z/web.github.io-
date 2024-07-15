@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivanna Zarate">
+    <meta name="description" content="Sitio E-commerce">
+    <!-- Iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link de tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cambio de los estilos de tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'lila': '#dec8f0e3;',
+            },
+            fontFamily: {
+              fontTexto: ["Montserrat", 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Contenedores con clases de tailwind   -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+          .letras-sm {
+            letter-spacing: 0.1rem;
+            font-size: 0.875rem ;
+            line-height: 1.25rem;
+            font-weight:500;
+          }
+          .letras-xs{
+            letter-spacing: 0.1rem;
+            font-size: 0.75rem;
+            line-height: 1rem;
+          }
+          .letras-bs{
+            letter-spacing: 0.1rem;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+          }
+          .tarjeta{
+            background-color:#efeae4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            overflow: hidden;
+          }
+        }
+      </style>
+    <!-- Links de la tipografia  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+    <!-- Titulo -->
+    <title>Felime Charm |Productos|</title>
+  
+  </head>
+  
+<body class="fontTexto m-0 p-0 text-black">
+  <!-- Encabezado -->
+  <header class="flex flex-col md:flex-row md:justify-between items-center bg-white  m-3 letras-xs">
+    <!-- Logo/Nombre del Sitio -->
+    <div class="flex flex-col md:flex-row md:justify-center items-center letras-sm mb-4 md:mb-0">
+      <img src="./imagenes/icono.jpg" alt="Logo de la pagina" width="45px" title="Nuestro Logo"
+        class="mb-1 transition duration-[1.2s] hover:scale-125">
+      <h1 class="md:ml-4 transition duration-[1.2s] hover:scale-105">FELINE CHARM</h1>
+    </div>
+    <!-- Barra de Navegación -->
+    <nav>
+      <ul class="flex justify-center items-center">
+        <li>
+          <a href="./index.html" class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">INICIO</a>
+        </li>
+        <li>
+          <a href="./nosotros.html" class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">NOSOTROS</a>
+        </li>
+
+        <li>
+          <a href="./contacto.html" class="no-underline transition-all duration-100 mx-2 hover:rounded-3xl hover:p-2 hover:bg-lila">CONTACTO</a>
+        </li>
+        <li>
+          <a href="./carrito.html" class="no-underline transition-all duration-100 mx-3">
+            <i class="bi bi-bag-heart-fill hover:text-red-800 text-base" title="Carrito de Compras"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+ </header>
+    <!-- Contenido -->
+  <main class="mx-4 my-7" >
+
+    <section class="letras-bs pb-7 mx-7 text-center">
+      <hr>
+        <h2 class="p-2"><a href="#remeras">REMERAS</a> | <a href="#buzos">BUZOS</a></h2>
+      <hr>
+    </section>
+    <!-- SECION REMERAS-->
+    <section class="grid grid-cols-2 grid-rows-4 gap-2 md:grid-cols-4 md:grid-rows-2" id="remeras">    
+        <!-- Producto /Remera/ -->
+        <div class="tarjeta m-2 md:m-4" id="remera-1">
+          <img src="./imagenes/productos/remeras/1.jpg" class="w-full" alt="Remera Oversize 'Black Cat'">
+          <div class="text-center letras-xs pt-3">
+            <h3 class="text-base">Remera Oversize</h3>
+            <h4 class="letras-sm">'Black Cat'</h4>
+            <p class="p-1 font-light">$$$$</p>  
+            <p class="pt-2">
+              <a href="./detalles-productos/remeras/remera-1.html">Ver Detalles</a> 
+            </p>
+          </div>
+          <div class="text-base flex justify-end px-2">
+            <button>
+              <!-- Ejemplo de Carrito con un producto -->
+              <a href="./carrito-ejemplo.html"><i class="bi bi-bag-heart-fill hover:text-red-800 "></i></a>
+            </button>
+          </div>
+        </div>
+        <!-- Producto /Remera/ -->
+        <div class="tarjeta m-2 md:m-4" id="remera-2">
+          <img src="./imagenes/productos/remeras/2.jpg" class="w-full" alt="Remera Oversize 'Cute Cat'">
+          <div class="text-center letras-xs pt-3">
+            <h3 class="text-base">Remera Oversize</h3>
+            <h4 class="letras-sm">'Cute Cat'</h4>
+            <p class="p-1 font-light">$$$$</p>  
+            <p class="pt-2">
+              <a href="./detalles-productos/remeras/remera-2.html">Ver Detalles</a> 
+            </p>
+          </div>
+          <div class="text-base flex justify-end px-2">
+            <button>
+              <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+            </button>
+          </div>
+        </div>
+       <!-- Producto /Remera/ -->
+       <div class="tarjeta m-2 md:m-4" id="remera-3">
+        <img src="./imagenes/productos/remeras/3.jpg" class="w-full" alt="Remera Oversize 'Purrfect'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Remera Oversize</h3>
+          <h4 class="letras-sm">'Purrfect'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/remeras/remera-3.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Remera/ -->
+       <div class="tarjeta m-2 md:m-4" id="remera-4">
+        <img src="./imagenes/productos/remeras/4.jpg" class="w-full" alt="Remera Oversize 'Rocker Cat'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Remera Oversize</h3>
+          <h4 class="letras-sm">'Rocker Cat'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/remeras/remera-4.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Remera/ -->
+       <div class="tarjeta m-2 md:m-4" id="remera-5">
+        <img src="./imagenes/productos/remeras/5.jpg" class="w-full" alt="Remera Oversize 'Cute Kitty'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Remera Oversize</h3>
+          <h4 class="letras-sm">'Cute Kitty'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/remeras/remera-5.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Remera/ -->
+       <div class="tarjeta m-2  md:m-4" id="remera-6">
+        <img src="./imagenes/productos/remeras/6.jpg" class="w-full" alt="Remera Oversize 'Kitty'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Remera Oversize</h3>
+          <h4 class="letras-sm">'Kitty'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/remeras/remera-6.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Remera/ -->
+       <div class="tarjeta m-2 md:m-4" id="remera-7">
+        <img src="./imagenes/productos/remeras/7.jpg" class="w-full" alt="Musculosa 'Purr'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Musculosa</h3>
+          <h4 class="letras-sm">'Purr'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/remeras/remera-7.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Remera/ -->
+       <div class="tarjeta m-2 md:m-4" id="remera-8">
+        <img src="./imagenes/productos/remeras/8.jpeg" class="w-full" alt="Remera Nevada Oversize'Pink Kitty'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Nevada Oversize</h3>
+          <h4 class="letras-sm">'Pink Kitty'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/remeras/remera-8.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION BUZOS -->
+    <section class="grid grid-cols-2 grid-rows-4 gap-2 md:grid-cols-4 md:grid-rows-2" id="buzos">
+        <!-- Producto /Buzo/ -->
+      <div class="tarjeta m-2 md:m-4" id="buzo-1">
+        <img src="./imagenes/productos/buzos/1.jpg" class="w-full" alt="Buzo Jogger Oversize 'White Kitty'">
+          <div class="text-center letras-xs pt-3">
+            <h3 class="text-base">Buzo Jogger Oversize</h3>
+            <h4 class="letras-sm">'White Kitty'</h4>
+            <p class="p-1 font-light">$$$$</p>  
+            <p class="pt-2">
+              <a href="./detalles-productos/buzos/buzo-1.html">Ver Detalles</a> 
+            </p>
+          </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+        <!-- Producto /Buzo/ -->
+      <div class="tarjeta m-2 md:m-4" id="buzo-2">
+        <img src="./imagenes/productos/buzos/2.jpg" class="w-full" alt="Buzo Jogger Oversize 'Kitten'">
+          <div class="text-center letras-xs pt-3">
+            <h3 class="text-base">Buzo Jogger Oversize</h3>
+            <h4 class="letras-sm">'Kitten'</h4>
+            <p class="p-1 font-light">$$$$</p>  
+            <p class="pt-2">
+              <a href="./detalles-productos/buzos/buzo-2.html">Ver Detalles</a> 
+            </p>
+          </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Buzo/ -->
+       <div class="tarjeta m-2 md:m-4" id="buzo-3">
+        <img src="./imagenes/productos/buzos/3.jpg" class="w-full" alt="Buzo Canguro Oversize 'Purrfect'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Buzo Canguro </h3>
+          <h4 class="letras-sm">'Purrfect'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/buzos/buzo-3.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Buzo/ -->
+       <div class="tarjeta m-2 md:m-4" id="buzo-4">
+        <img src="./imagenes/productos/buzos/4.jpg" class="w-full" alt="Sweater 'Purrpals'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Sweater</h3>
+          <h4 class="letras-sm">'Purrpals'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/buzos/buzo-4.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Buzo/ -->
+       <div class="tarjeta m-2 md:m-4" id="buzo-5">
+        <img src="./imagenes/productos/buzos/5.jpg" class="w-full" alt="Buzo Canguro 'White Kitty'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Buzo Canguro</h3>
+          <h4 class="letras-sm">'White Kitty'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/buzos/buzo-5.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Buzo/ -->
+       <div class="tarjeta m-2 md:m-4" id="buzo-6">
+        <img src="./imagenes/productos/buzos/6.jpg" class="w-full" alt="Buzo Jogger 'Catis'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Buzo Jogger </h3>
+          <h4 class="letras-sm">'Catis'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/buzos/buzo-6.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Buzo/ -->
+       <div class="tarjeta m-2 md:m-4" id="buzo-7">
+        <img src="./imagenes/productos/buzos/7.jpg" class="w-full" alt="Zip Hood 'CatHood'" >
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Zip Hood</h3>
+          <h4 class="letras-sm">'CatHood'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/buzos/buzo-7.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+       <!-- Producto /Buzo/ -->
+       <div class="tarjeta m-2 md:m-4" id="buzo-8">
+        <img src="./imagenes/productos/buzos/8.jpg" class="w-full" alt="Buzo Jogger'Purr'">
+        <div class="text-center letras-xs pt-3">
+          <h3 class="text-base">Buzo Jogger</h3>
+          <h4 class="letras-sm">'Purr'</h4>
+          <p class="p-1 font-light">$$$$</p>  
+          <p class="pt-2">
+            <a href="./detalles-productos/buzos/buzo-8.html">Ver Detalles</a> 
+          </p>
+        </div>
+        <div class="text-base flex justify-end px-2">
+          <button>
+            <i class="bi bi-bag-heart-fill hover:text-red-800 "></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="bg-black text-white font-light text-center letras-xs pt-20 pb-16">
+    <!-- Logo y Pequeño Mensaje -->
+    <div class="flex flex-col items-center justify-center md:letras-sm mb-5 px-5">
+      <img src="./imagenes/icon.png" alt="Logo de la Pagina" width="45px" title="Nuestro Logo"
+        class="mb-1 transition duration-[1.2s] hover:scale-125">
+      <h2 class="mt-4">¡Viste con encanto felino, viste con Feline Charm!</h2>
+    </div>
+    <!-- Contacto //Utilice iconos de bootstrap//-->
+    <div>
+      <ul class=" flex text-lg justify-center mb-10 mt-10">
+        <li>
+          <a href="https://github.com" target="_blank">
+            <i class="bi bi-github px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="bi bi-linkedin px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ivannit_a?igsh=bThmZW91MzRjdWI2" target="_blank">
+            <i class="bi bi-instagram px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:ivvi.zarate@gmail.com" target="_blank">
+            <i class="bi bi-envelope px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.link/1l9hui" target="_blank">
+            <i class="bi bi-whatsapp px-2 py-1  rounded-full mx-1 hover:text-black hover:bg-lila"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Links de Ayuda / Politicas de Privacidad -->
+    <div>
+      <ul class="flex flex-col">
+        <li><a href="#" class="leading-6 underline hover:text-lila">Como comprar</a> </li>
+        <li><a href="#" class="leading-6 underline hover:text-lila">Sobre Nosotros</a></li>
+
+        <li><a href="#" class="leading-6 underline hover:text-lila">Política de Privacidad </a> </li>
+        <li><a href="#" class="leading-6 underline hover:text-lila">Términos y Condiciones </a></li>
+      </ul>
+      <!-- Derechos de autor   -->
+      <p class="mt-7">
+        &#169; 2024 Feline Charm
+        <br>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
